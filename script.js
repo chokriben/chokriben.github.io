@@ -14,7 +14,8 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
-
+    
+    document.getElementById('year').textContent = new Date().getFullYear();
     // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
